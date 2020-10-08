@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import {MyContainer} from "../GlobalStyle"
 
 export const Nav = styled.nav`
-    background:  ${({active}) => active ? "#101522": "#101522"};
+    background:  ${({active}) => active ? "#101522": "transparency"};
     height: 80px;
     display: flex;
     position:sticky;

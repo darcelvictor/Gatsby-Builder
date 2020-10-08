@@ -1,9 +1,9 @@
 import React from 'react'
 import {Container, Button} from '../globalStyle'
-import {InfoSec, InfoRow, InfoColumn,TextWrapper} from './InfoSectionElements'
+import {InfoSec, InfoRow, InfoColumn,TextWrapper, TopLine, HeadLine, Subtitle} from './InfoSectionElements'
 
 
-const InfoSection = ({imgStart, topLine,headLine,description}) => {
+const InfoSection = ({imgStart, topLine, headLine, description}) => {
     return (
         <>
             <InfoSec>

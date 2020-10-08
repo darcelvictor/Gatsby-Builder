@@ -35,6 +35,13 @@ export const TextWrapper = styled.div`
     }
 `
 
-export const TopLine = styled.div` 
-    color: 
+export const TopLine = styled.p` 
+    line-height:1.8rem;
+`
+
+export const HeadLine= styled.h2`
+    text-align : left; 
+`
+export const Subtitle= styled.p`
+    text-align : left; 
 `

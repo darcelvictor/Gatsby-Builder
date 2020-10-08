@@ -14,7 +14,8 @@ import PropTypes from "prop-types"
 import GlobalStyle from "./GlobalStyle"
 
 import Navbar from "./Navbar"
-import InfoSection from "./InfoSection"
+
+
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -32,13 +33,6 @@ const Layout = ({ children }) => {
       
       <Navbar/>
       <GlobalStyle/>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
         <main>{children}</main>
         <footer style={{
           marginTop: `2rem`
@@ -47,7 +41,6 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
-      </div>
     </>
   )
 }
