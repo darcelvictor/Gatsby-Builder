@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
-import {Container} from "../globalStyle"
+import {MyContainer} from "../GlobalStyle"
 
 export const Nav = styled.nav`
-    background:  ${({active}) => active ? "#101522": "transparancy"};
+    background:  ${({active}) => active ? "#101522": "#101522"};
     height: 80px;
     display: flex;
     position:sticky;
@@ -19,13 +19,13 @@ export const Nav = styled.nav`
     } 
 `
 
-export const NavbarContainer = styled(Container)`
+export const NavbarContainer = styled(MyContainer)`
     display:flex;
     justify-content:space-between;
     height:80px;
     z-index:1;
     max-width:100vw;
-    ${Container}
+    ${MyContainer}
 `
 
 export const NavLogo = styled(Link)`
@@ -69,7 +69,7 @@ text-align:center;
     top: ${({click}) => (click ? "100%": "-100vh")};
     opacity : 1;
     transition: all 0.5s ease;
-    background : red;
+    background : #101522;
     }
 `
 

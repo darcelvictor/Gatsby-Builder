@@ -29,7 +29,7 @@ h1{
 `
 export default GlobalStyle;
 
-export const Container = styled.div`
+export const MyContainer = styled.div`
 z-index: 1;
 width: 100%;
 max-width:1300px;
@@ -44,10 +44,10 @@ padding-right:50px;
 }
 `
 
-export const Button = styled.button`
-    border-radius:4px;
-    background : blue;
-    border:none;
-    white-space:no-wrap;
-    cursor: pointer;
-`
+// export const MyButton = styled.button`
+//     border-radius:4px;
+//     background : blue;
+//     border:none;
+//     white-space:no-wrap;
+//     cursor: pointer;
+// `
