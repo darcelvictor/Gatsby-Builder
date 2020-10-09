@@ -1,18 +1,5 @@
 import styled, {createGlobalStyle} from "styled-components"
 
-//colors :
-
-//const primary = "blue";
-//const header = "red";
-//const headerIconColor = "White";
-
-
-//font
-
-
-
-//max-width 
-
 
 
 
@@ -32,12 +19,12 @@ export default GlobalStyle;
 export const MyContainer = styled.div`
 z-index: 1;
 width: 100%;
-max-width:1300px;
+max-width:${props => props.theme.maxWidth};
 margin-left:auto;
 margin-right:auto;
 padding-left:50px;
 padding-right:50px;
-@media screen and (max-width:991px)
+@media screen and (max-width: ${props => props.theme.maxWidth})
 {
     padding-left: 30px;
     padding-right: 30px;

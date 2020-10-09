@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import {MyContainer} from "../GlobalStyle"
 
 export const Nav = styled.nav`
-    background:  ${({active}) => active ? "#101522": "transparency"};
+    background:  ${({active}) => active ? "#101522": "#101522"};
     height: 80px;
     display: flex;
     position:sticky;
@@ -12,7 +12,7 @@ export const Nav = styled.nav`
     align-items:center;
     top:0;
     z-index:999;
-    @media screen and (max-width: 960px)
+    @media screen and (max-width: ${props => props.theme.maxWidth})
     {
         background: ${({click}) => click ? "#101522": "#101522"};
         transition: 0.8 all ease;
@@ -41,7 +41,7 @@ export const NavLogo = styled(Link)`
 `
 export const MobileIcon = styled.div`  
     display : none;
-    @media screen and (max-width:960px){
+    @media screen and (max-width:${props => props.theme.maxWidth}){
         display: block;
         position: absolute;
         top:0;
@@ -58,7 +58,7 @@ align-items:center;
 list-style:none;
 text-align:center;
 
-    @media screen and (max-width:960px){
+    @media screen and (max-width:${props => props.theme.maxWidth}){
     display:flex;
     flex-direction:column;
     justify-content:space-around!important;
@@ -75,7 +75,7 @@ text-align:center;
 
 export const NavItem = styled.li`
     height:80px;
-    @media screen and (max-width:960px)
+    @media screen and (max-width:${props => props.theme.maxWidth})
     {
         width:100%
     }
@@ -92,7 +92,7 @@ export const NavLink = styled(Link)`
         color:#efefef;
         transition :  0.3s All ease;
     }
-    @media screen and (max-width:960px){
+    @media screen and (max-width:${props => props.theme.maxWidth}){
         text-align: center;
         padding : 2rem;
         width:100%;
