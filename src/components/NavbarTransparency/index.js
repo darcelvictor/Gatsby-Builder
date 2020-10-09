@@ -1,23 +1,41 @@
-import React, { useState }from 'react'
+import React, { useState, useEffect }from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 import NavIcon from '../../images/svg/logoDP.inline.svg'
-import {Nav, NavbarContainer, NavLogo, NavBrand, MobileIcon, NavMenu, NavItem, NavLink} from './NavbarsElements'
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLink} from './NavbarsElements'
 
 
 const Navbar = () => {
     const [click,setClick]=useState(false)
-   
+    const [scrool,setScroll]= useState(false)
+
+
+    const changeNav = () => {
+        if (window.scrollY >=80) 
+        {
+            setScroll(true)
+        }
+        else
+        {
+            setScroll(false)
+        }
+    }
+
     const handleClick = () => setClick(!click)
+
+    useEffect(()=>{
+        changeNav()
+        window.addEventListener("scroll",changeNav)
+    }, [])
 
     return (
         <>
             <IconContext.Provider value = {{color:"white"}}>
-                <Nav click={click}>
+                <Nav active={scrool} click={click}>
                     <NavbarContainer>
                         <NavLogo to="/">
                             <NavIcon style={{margin: "0 1.5rem 0 0", alignSelf:"center"}}/>
-                            <NavBrand>Digital<br/>Project</NavBrand>
+                            <p>Digital<br/>Project</p>
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>
                             {click ? <FaTimes/> : <FaBars/>}

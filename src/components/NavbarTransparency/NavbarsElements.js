@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import {MyContainer} from "../GlobalStyle"
 
 export const Nav = styled.nav`
-    background: ${props => props.theme.primary};
+    background:  ${({active}) => active ? "#101522": "red"};
     height: 80px;
     display: flex;
     position:sticky;
@@ -14,7 +14,7 @@ export const Nav = styled.nav`
     z-index:999;
     @media screen and (max-width: ${props => props.theme.maxWidth})
     {
-        background: ${props => props.theme.primary};
+        background: ${({click}) => click ? "#101522": "#101522"};
         transition: 0.8 all ease;
     } 
 `
@@ -29,6 +29,7 @@ export const NavbarContainer = styled(MyContainer)`
 `
 
 export const NavLogo = styled(Link)`
+    color: #555;
     justify-self: flex-start;
     cursor: pointer;
     text-decoration: none;
@@ -37,11 +38,6 @@ export const NavLogo = styled(Link)`
     display:flex;
     align-items:center;
     color:white;
-`
-
-export const NavBrand = styled.p`
-    color:white;
-    font-family: ${props => props.theme.firstFont};
 `
 export const MobileIcon = styled.div`  
     display : none;
@@ -73,7 +69,7 @@ text-align:center;
     top: ${({click}) => (click ? "100%": "-100vh")};
     opacity : 1;
     transition: all 0.5s ease;
-    background : ${props => props.theme.primary};
+    background : #101522;
     }
 `
 
@@ -92,7 +88,6 @@ export const NavLink = styled(Link)`
     text-decoration:none;
     padding: 0 1rem;
     height: 100%;
-    font-family: ${props => props.theme.firstFont};
     &:hover{
         color:#efefef;
         transition :  0.3s All ease;
