@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
-import {MyContainer} from "../GlobalStyle"
+import {MyContainer} from "../ParentsComponents"
 
 export const Nav = styled.nav`
     background: ${props => props.theme.primary};

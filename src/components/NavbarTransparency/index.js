@@ -2,7 +2,7 @@ import React, { useState, useEffect }from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 import NavIcon from '../../images/svg/logoDP.inline.svg'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLink} from './NavbarsElements'
+import {Nav, NavbarContainer, NavLogo, NavBrand, MobileIcon, NavMenu, NavItem, NavLink,NavCTA} from './NavbarsElements'
 
 
 const Navbar = () => {
@@ -35,7 +35,7 @@ const Navbar = () => {
                     <NavbarContainer>
                         <NavLogo to="/">
                             <NavIcon style={{margin: "0 1.5rem 0 0", alignSelf:"center"}}/>
-                            <p>Digital<br/>Project</p>
+                            <NavBrand>Digital<br/>Project</NavBrand>
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>
                             {click ? <FaTimes/> : <FaBars/>}
@@ -48,7 +48,7 @@ const Navbar = () => {
                                 <NavLink to="/">Expertises</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/">Contact</NavLink>
+                                <NavCTA to="/">Contact</NavCTA>
                             </NavItem>
                         </NavMenu>
                     </NavbarContainer>

@@ -13,7 +13,8 @@ import PropTypes from "prop-types"
 
 import GlobalStyle from "./GlobalStyle"
 
-import Navbar from "./Navbar"
+import Navbar from "./NavbarTransparency"
+import Footer from "./Footer"
 
 
 
@@ -34,13 +35,7 @@ const Layout = ({ children }) => {
       <Navbar/>
       <GlobalStyle/>
         <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+      <Footer/>
     </>
   )
 }

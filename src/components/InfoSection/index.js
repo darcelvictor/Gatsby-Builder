@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Button} from '../globalStyle'
+import {MyContainer, MyButton} from '../ParentsComponents'
 import {InfoSec, InfoRow, InfoColumn,TextWrapper, TopLine, HeadLine, Subtitle} from './InfoSectionElements'
 
 
@@ -7,18 +7,19 @@ const InfoSection = ({imgStart, topLine, headLine, description}) => {
     return (
         <>
             <InfoSec>
-                <Container>
+                <MyContainer>
                     <InfoRow imgStart={imgStart}>
                         <InfoColumn>
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
                                 <HeadLine>{headLine}</HeadLine>
                                 <Subtitle>{description}</Subtitle>
-                                <Button></Button>
+                                <MyButton to="/">Contactez-nous</MyButton>
                             </TextWrapper>
                         </InfoColumn>
+                       
                     </InfoRow>
-                </Container>
+                </MyContainer>
             </InfoSec>
         </>
     )

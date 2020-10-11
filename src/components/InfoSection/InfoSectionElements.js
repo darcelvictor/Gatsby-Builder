@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const InfoSec = styled.div`
     color:#fff;
     padding: 160px 0;
-    background:red;
+    background: #1c2237;
 `
 
 export const InfoRow = styled.div`
@@ -14,7 +14,7 @@ export const InfoRow = styled.div`
     flex-direction: ${({imgStart})=>(imgStart ? 'row-reverse':'row')};
 `
 export const InfoColumn=styled.div`
-    margin: 0 15px 15px 15px;
+    margin: auto 15px 15px 15px;
     flex:1;
     max-width:50%;
     flex-basis:50%;
@@ -36,7 +36,8 @@ export const TextWrapper = styled.div`
 `
 
 export const TopLine = styled.p` 
-    line-height:1.8rem;
+    margin-bottom:16;
+    font-size: 1.1rem;
 `
 
 export const HeadLine= styled.h2`

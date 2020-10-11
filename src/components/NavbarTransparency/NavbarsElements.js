@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
-import {MyContainer} from "../GlobalStyle"
+import {MyContainer} from "../ParentsComponents"
 
 export const Nav = styled.nav`
-    background:  ${({active}) => active ? "#101522": "red"};
+    background:  ${({active}) => active ? "#101522": "#1c2237"};
     height: 80px;
     display: flex;
     position:sticky;
@@ -12,6 +12,7 @@ export const Nav = styled.nav`
     align-items:center;
     top:0;
     z-index:999;
+    transition: 0.8 all ease;
     @media screen and (max-width: ${props => props.theme.maxWidth})
     {
         background: ${({click}) => click ? "#101522": "#101522"};
@@ -38,6 +39,10 @@ export const NavLogo = styled(Link)`
     display:flex;
     align-items:center;
     color:white;
+`
+export const NavBrand = styled.p`
+    color:white;
+    font-family: ${props => props.theme.firstFont};
 `
 export const MobileIcon = styled.div`  
     display : none;
@@ -75,6 +80,8 @@ text-align:center;
 
 export const NavItem = styled.li`
     height:80px;
+    display:flex;
+    align-items:center;
     @media screen and (max-width:${props => props.theme.maxWidth})
     {
         width:100%
@@ -96,6 +103,37 @@ export const NavLink = styled(Link)`
         text-align: center;
         padding : 2rem;
         width:100%;
+        display: table;
+        &:hover{
+            color:#efefef;
+            transition :  0.3s All ease;
+        }
+    }
+`
+
+export const NavCTA = styled(Link)`
+    color : #fff;
+    display:flex;
+    align-items:center;
+    align-self:center;
+    background-color : ${props => props.theme.fourth};
+    text-decoration:none;
+    padding: 10px 20px;
+    border : 2px solid ${props => props.theme.fourth};
+    height: 30px;
+    border-radius: 4px;
+    &:hover{
+        color:#efefef;
+        transition :  0.3s All ease;
+        background-color : transparent;
+    }
+    @media screen and (max-width:${props => props.theme.maxWidth}){
+        text-align: center;
+        align-self: center;
+        margin-left:auto;
+        margin-right:auto;
+        padding : 2rem;
+        width: 80%;
         display: table;
         &:hover{
             color:#efefef;
