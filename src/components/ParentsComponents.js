@@ -20,10 +20,10 @@ export const MyButton = styled(Link)`
     color : #fff;
     align-self:center;
     text-align:center;
-    background-color : ${props => props.theme.fourth};
+    background-color : ${props => props.theme.quaternary};
     text-decoration:none;
     padding: 1rem;
-    border : 2px solid ${props => props.theme.fourth};
+    border : 2px solid ${props => props.theme.quaternary};
     border-radius: 4px;
     &:hover{
         color:#efefef;

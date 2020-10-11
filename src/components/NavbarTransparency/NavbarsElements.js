@@ -116,10 +116,10 @@ export const NavCTA = styled(Link)`
     display:flex;
     align-items:center;
     align-self:center;
-    background-color : ${props => props.theme.fourth};
+    background-color : ${props => props.theme.quaternary};
     text-decoration:none;
     padding: 10px 20px;
-    border : 2px solid ${props => props.theme.fourth};
+    border : 2px solid ${props => props.theme.quaternary};
     height: 30px;
     border-radius: 4px;
     &:hover{
