@@ -10,8 +10,8 @@ const theme = {
     quinary: "#a9b3c1",
     senary: "#f7f8FA",
     //font
-    // firstFont: `'Roboto', sans-serif`,  
-    // secondFont:`'Montserrat',sans-serif;`,
+    firstFont: `'Roboto', sans-serif`,  
+    secondFont:`'Montserrat',sans-serif;`,
 }
 
 export default theme
