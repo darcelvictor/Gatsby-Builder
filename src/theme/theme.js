@@ -1,4 +1,4 @@
-export default {
+const theme = {
     maxWidth:"1100px",
     wrapperWidth:"900px",
    
@@ -10,6 +10,8 @@ export default {
     quinary: "#a9b3c1",
     senary: "#f7f8FA",
     //font
-    firstFont: `'Roboto', sans-serif`,  
-    secondFont:`'Montserrat',sans-serif;`,
+    // firstFont: `'Roboto', sans-serif`,  
+    // secondFont:`'Montserrat',sans-serif;`,
 }
+
+export default theme

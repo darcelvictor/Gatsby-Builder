@@ -31,8 +31,6 @@ p {
     font-size: 1em; 
     font-family: 'Montserrat', sans-serif;
     font-weight:400;
-}
+}`
 
-
-`
 export default GlobalStyle;
