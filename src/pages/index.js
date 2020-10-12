@@ -5,13 +5,14 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-import InfoSection from "../components/InfoSection"
+import HeroInfoSection from "../components/HeroInfoSection"
+import {firstCTA} from "./DATA/HomePage"
 
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <InfoSection/>
+    <HeroInfoSection {...firstCTA}/>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

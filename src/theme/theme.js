@@ -1,5 +1,6 @@
 export default {
-    maxWidth:"960px",
+    maxWidth:"1100px",
+    wrapperWidth:"900px",
    
     //color https://coolors.co/101522-1c2237-4b59f7-0467fb-a9b3c1-f7f8fa
     primary: "#101522",
@@ -9,5 +10,6 @@ export default {
     quinary: "#a9b3c1",
     senary: "#f7f8FA",
     //font
-    firstFont: `'Roboto', sans-serif`, 
+    firstFont: `'Roboto', sans-serif`,  
+    secondFont:`'Montserrat',sans-serif;`,
 }

@@ -30,7 +30,7 @@ export const MyButton = styled(Link)`
         transition :  0.3s All ease;
         background-color : transparent;
     }
-    @media screen and (max-width:${props => props.theme.maxWidth}){
+    @media screen and (max-width:${props => props.theme.wrapperWidth}){
         text-align: center;
         align-self: center;
         margin-left:auto;

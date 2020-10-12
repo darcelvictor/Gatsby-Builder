@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import {MyContainer} from "../ParentsComponents"
 
 export const Nav = styled.nav`
-    background:  ${({active}) => active ? "#101522": "#1c2237"};
+    background:  ${({active}) => active ? "#101522": "transparency"};
     height: 80px;
     display: flex;
     position:sticky;
@@ -70,8 +70,8 @@ text-align:center;
     width:100%;
     height:50vh;
     position:absolute;
-    left:0;
-    top: ${({click}) => (click ? "100%": "-100vh")};
+    right:${({click}) => (click ? "0%": "-100vw")};
+    top:80px;
     opacity : 1;
     transition: all 0.5s ease;
     background : #101522;
