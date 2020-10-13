@@ -5,7 +5,8 @@ export const InfoSec = styled.section`
     background: #1c2237;
     margin-top: ${({firstSection}) => firstSection ? "-80px" : "0px"};
     @media screen and (max-width: ${props => props.theme.wrapperWidth}){
-        padding: 100px 0;
+        padding: 40px 0;
+        margin-top: 0;
     }
 `
 
