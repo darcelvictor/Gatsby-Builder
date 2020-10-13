@@ -64,7 +64,7 @@ list-style:none;
 text-align:center;
 
     @media screen and (max-width:${props => props.theme.maxWidth}){
-    display:flex;
+    display: ${({click}) => (click ? "flex": "none")};
     flex-direction:column;
     justify-content:space-around!important;
     width:100%;
