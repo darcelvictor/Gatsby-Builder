@@ -70,10 +70,10 @@ text-align:center;
     width:100%;
     height:50vh;
     position:absolute;
-    right:${({click}) => (click ? "0%": "-100vw")};
+    right:${({click}) => (click ? "0%": "-100%")};
     top:80px;
     opacity : 1;
-    transition: all 0.5s ease;
+    transition: all 5s ease;
     background : #101522;
     }
 `
