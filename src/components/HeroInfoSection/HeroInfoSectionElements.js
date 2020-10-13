@@ -4,6 +4,9 @@ export const InfoSec = styled.section`
     padding: 160px 0;
     background: #1c2237;
     margin-top: ${({firstSection}) => firstSection ? "-80px" : "0px"};
+    @media screen and (max-width: ${props => props.theme.wrapperWidth}){
+        padding: 100px 0;
+    }
 `
 
 export const InfoRow = styled.div`

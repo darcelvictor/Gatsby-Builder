@@ -7,7 +7,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 text-decoration:none;
-background : #101522;
+background : ${props => props.theme.primary};
 color:white;
 `
 
