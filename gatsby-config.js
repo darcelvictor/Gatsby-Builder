@@ -37,15 +37,30 @@ module.exports = {
         }
       }
     },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       `Roboto\:500`,
+    //       `Montserrat\:400`
+    //     ],
+    //     display: 'swap'
+    //   }
+    // },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
-          `Roboto\:500`,
-          `Montserrat\:400`
+          {
+            family: `Roboto`,
+            subsets: [`500`],
+          },
+          {
+            family: `Montserrat`,
+            variants: [`400`]
+          },
         ],
-        display: 'swap'
-      }
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
