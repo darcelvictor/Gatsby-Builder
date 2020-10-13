@@ -7,8 +7,8 @@
 // You can delete this file if you're not using it
 import React from 'react';
 import {ThemeProvider} from "styled-components";
-import Theme from "./src/theme/theme";
+import theme from "./src/theme/theme";
 
 export const wrapRootElement = ({element}) => (
-    <ThemeProvider theme={Theme}>{element}</ThemeProvider>
+    <ThemeProvider theme={theme}>{element}</ThemeProvider>
 )

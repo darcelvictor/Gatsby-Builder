@@ -9,7 +9,7 @@ export const firstCTA =
     description2:`Nos sites sont optimisés, rapides et sécurisés.`,
     buttonLabel:"contactez-nous !",
     buttonLink:"/contact",
-    img:require('../../images/svg/web_developer.svg'),
+    img:require('../images/svg/web_developer.svg'),
     alt:'web developer',
 }
 
@@ -23,6 +23,6 @@ export const secondSection =
     Nos sites sont optimisés afin de permettre le meilleur référencement possible.`,
     buttonLabel:"contactez-nous !",
     buttonLink:"/contact",
-    img:require('../../images/svg/web_developer.svg'),
+    img:require('../images/svg/web_developer.svg'),
     alt:'web developer',
 }

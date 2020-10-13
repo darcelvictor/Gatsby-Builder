@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import HeroInfoSection from "../components/HeroInfoSection"
-import {firstCTA} from "./DATA/HomePage"
+import {firstCTA} from "../DATA/HomePage"
 
 
 const IndexPage = () => (
