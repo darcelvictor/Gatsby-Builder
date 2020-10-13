@@ -1,13 +1,14 @@
 import { navigate } from "gatsby"
 import React, { useState } from "react";
 
-import {Label, Input} from "./ContactElements"
+import {Form, Label, LabelRgpd, Input, InputBtn,Textarea} from "./ContactElements"
 import {MyContainer} from "../ParentsComponents"
 
 const ContactForm = (props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [rgpd, setRgpd] = useState("");
 
 
   // This function puts all the form fields into a FormData constructor, which we later encode with the URLSearchParams constructor
@@ -25,7 +26,8 @@ const ContactForm = (props) => {
       "form-name": "contact",
       "name": name,
       "e-mail": email,
-      "message":message
+      "message":message,
+      "RGOD": rgpd,
     }
     // This POSTs your encoded form to Netlify with the required headers (for text; headers will be different for POSTing a file) and, on success, redirects to the custom success page using Gatsby's `navigate` helper function that we imported at the top
     fetch("/", {
@@ -41,35 +43,47 @@ const ContactForm = (props) => {
 
   return (
     <MyContainer>
-    <form netlify action="/" name="contact" method="post" onSubmit={handleSubmit}>
+    <Form netlify action="/" name="contact" method="post" onSubmit={handleSubmit}>
       <Label>
         Votre Nom :
-        <input
+        <Input
           name="firstName"
           type="text"
           value={name}
           onChange={e => setName(e.target.value)}
+          required
         />
       </Label>
       <Label>
         Votre e-mail:
-        <input
+        <Input
           name="email"
           type="email"
           value={email}
           onChange={e => setEmail(e.target.value)}
+          required
         />
       </Label>
       <Label>
         Votre e-mail:
-        <textarea
+        <Textarea
           name="message"
           value={message}
           onChange={e => setMessage(e.target.value)}
+          required
         />
       </Label>
-      <Input type="submit" value="Submit" />
-    </form>
+      RGPD :
+      <LabelRgpd>
+        <Input 
+        type="checkbox"
+        value={rgpd}
+        onChange={e => setRgpd(e.target.value)}
+        required/>
+        Je consens à ce que ce site stocke les informations que je lui ai soumises afin qu’il puisse répondre à ma demande.
+      </LabelRgpd>
+      <InputBtn type="submit" value="Submit" />
+    </Form>
     </MyContainer>
   );
 }

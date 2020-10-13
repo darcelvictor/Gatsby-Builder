@@ -26,7 +26,7 @@ export const MyButton = styled(Link)`
     border : 2px solid ${props => props.theme.quaternary};
     border-radius: 4px;
     &:hover{
-        color:#efefef;
+        color:${props => props.theme.quinary};
         transition :  0.3s All ease;
         background-color : transparent;
     }
@@ -39,7 +39,7 @@ export const MyButton = styled(Link)`
         width: 100%;
         display: table;
         &:hover{
-            color:#efefef;
+            color:${props => props.theme.quinary};
             transition :  0.3s All ease;
         }
     }
