@@ -1,20 +1,8 @@
-// import React from 'react'
-
-// const ContactForm = () => (
-// <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/contact/thank-you.html">
-//   {/* You still need to add the hidden input with the form name to your JSX form */}
-//     <input type="hidden" name="form-name" value="contact" />
-//     <input type="text" name="name" />
-//     <input type="email" name="email" />
-//     <textarea name="message" />
-//     <button type="submit">Send</button>
-// </form>
-// )
-
-// export default ContactForm
-
 import { navigate } from "gatsby"
 import React, { useState } from "react";
+
+import {Label, Input} from "./ContactElements"
+import {MyContainer} from "../ParentsComponents"
 
 const ContactForm = (props) => {
   const [name, setName] = useState("");
@@ -52,8 +40,9 @@ const ContactForm = (props) => {
   };
 
   return (
+    <MyContainer>
     <form netlify action="/" name="contact" method="post" onSubmit={handleSubmit}>
-      <label>
+      <Label>
         Votre Nom :
         <input
           name="firstName"
@@ -61,8 +50,8 @@ const ContactForm = (props) => {
           value={name}
           onChange={e => setName(e.target.value)}
         />
-      </label>
-      <label>
+      </Label>
+      <Label>
         Votre e-mail:
         <input
           name="email"
@@ -70,17 +59,18 @@ const ContactForm = (props) => {
           value={email}
           onChange={e => setEmail(e.target.value)}
         />
-      </label>
-      <label>
+      </Label>
+      <Label>
         Votre e-mail:
         <textarea
           name="message"
           value={message}
           onChange={e => setMessage(e.target.value)}
         />
-      </label>
-      <input type="submit" value="Submit" />
+      </Label>
+      <Input type="submit" value="Submit" />
     </form>
+    </MyContainer>
   );
 }
 
