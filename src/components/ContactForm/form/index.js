@@ -1,8 +1,9 @@
 import { navigate } from "gatsby"
 import React, { useState } from "react";
 
-import {Form, Label, LabelRgpd, Input, InputBtn,Textarea} from "./ContactElements"
-import {MyContainer} from "../ParentsComponents"
+
+import {Form, Label, LabelRgpd, Input, InputCheck, InputBtn,Textarea} from "./ContactFormElements"
+
 
 const ContactForm = (props) => {
   const [name, setName] = useState("");
@@ -42,7 +43,6 @@ const ContactForm = (props) => {
   };
 
   return (
-    <MyContainer>
     <Form netlify action="/" name="contact" method="post" onSubmit={handleSubmit}>
       <Label>
         Votre Nom :
@@ -71,20 +71,20 @@ const ContactForm = (props) => {
           value={message}
           onChange={e => setMessage(e.target.value)}
           required
+          rows="8"
         />
       </Label>
       RGPD :
       <LabelRgpd>
-        <Input 
+        <InputCheck
         type="checkbox"
         value={rgpd}
         onChange={e => setRgpd(e.target.value)}
         required/>
         Je consens à ce que ce site stocke les informations que je lui ai soumises afin qu’il puisse répondre à ma demande.
       </LabelRgpd>
-      <InputBtn type="submit" value="Submit" />
+      <InputBtn type="submit" value="ENVOYER" />
     </Form>
-    </MyContainer>
   );
 }
 

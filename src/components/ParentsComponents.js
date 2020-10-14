@@ -1,6 +1,7 @@
 import {Link} from 'gatsby'
 import styled from "styled-components"
 
+
 export const MyContainer = styled.div`
 z-index: 1;
 width: 100%;
@@ -44,3 +45,4 @@ export const MyButton = styled(Link)`
         }
     }
 `
+

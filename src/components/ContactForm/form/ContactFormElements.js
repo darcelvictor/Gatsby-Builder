@@ -12,14 +12,20 @@ flex-direction: row;
 `
 
 export const Form = styled.form`
-justify-content:flex-end;
-align-items:flex-end;
+display:flex;
+flex-direction: column;
 `
 
 export const Input = styled.input`
 border : 2px solid;
 height: 30px;
 `
+export const InputCheck = styled.input`
+border : 2px solid;
+height: 30px;
+margin-right: 5px;
+`
+
 export const Textarea = styled.textarea`
 border : 2px solid;
 `
@@ -34,6 +40,7 @@ export const InputBtn = styled.input`
     padding: 1rem 2rem;
     border : 2px solid ${props => props.theme.quaternary};
     border-radius: 4px;
+    margin:20px;
     &:hover{
         color:${props => props.theme.quinary};
         transition :  0.3s All ease;

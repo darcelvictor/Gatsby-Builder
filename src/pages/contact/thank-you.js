@@ -1,11 +1,15 @@
 import React from 'react'
 import Layout from "../../components/layout"
+import ThankYou from "../../components/ThankYou"
 
-const ThankYou = () =>
+
+
+
+const ThankYouPage = () =>
 (
     <Layout>
-    <h1>Thank you</h1>
+        <ThankYou/>
     </Layout>
 )
 
-export default ThankYou
+export default ThankYouPage

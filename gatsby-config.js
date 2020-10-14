@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Digital Project`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Digital Project est une agence spécialisée web dans le devellopement de sites internet optimisés`,
     author: `@Digital Project`,
   },
   plugins: [
@@ -33,11 +33,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Digital Project`,
+        short_name: `Digital Project`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#1C2237`,
+        theme_color: `#1C2237`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
