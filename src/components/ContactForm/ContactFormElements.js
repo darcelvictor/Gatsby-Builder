@@ -14,6 +14,7 @@ flex-direction: row;
 export const Form = styled.form`
 display:flex;
 flex-direction: column;
+color:white;
 `
 
 export const Input = styled.input`
@@ -59,4 +60,20 @@ export const InputBtn = styled.input`
             transition :  0.3s All ease;
         }
     }
+`
+export const SectionForm = styled.section`
+width:100vw;
+height:100vh;
+min-height:800px;
+display:flex;
+background-color : ${props => props.theme.second};
+align-items:center;
+justify-content:center;
+margin-top:-80px;
+`
+
+export const H1Form= styled.h1`
+text-decoration:none;
+color: white;
+text-align:center;
 `

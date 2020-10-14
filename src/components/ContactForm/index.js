@@ -2,7 +2,8 @@ import { navigate } from "gatsby"
 import React, { useState } from "react";
 
 
-import {Form, Label, LabelRgpd, Input, InputCheck, InputBtn,Textarea} from "./ContactFormElements"
+import {Form, Label, LabelRgpd, Input, InputCheck, InputBtn,Textarea,SectionForm,H1Form} from "./ContactFormElements"
+import {MyContainer} from "../ParentsComponents"
 
 
 const ContactForm = (props) => {
@@ -43,48 +44,53 @@ const ContactForm = (props) => {
   };
 
   return (
-    <Form netlify action="/" name="contact" method="post" onSubmit={handleSubmit}>
-      <Label>
-        Votre Nom :
-        <Input
-          name="firstName"
-          type="text"
-          value={name}
-          onChange={e => setName(e.target.value)}
-          required
-        />
-      </Label>
-      <Label>
-        Votre e-mail:
-        <Input
-          name="email"
-          type="email"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-          required
-        />
-      </Label>
-      <Label>
-        Votre e-mail:
-        <Textarea
-          name="message"
-          value={message}
-          onChange={e => setMessage(e.target.value)}
-          required
-          rows="8"
-        />
-      </Label>
-      RGPD :
-      <LabelRgpd>
-        <InputCheck
-        type="checkbox"
-        value={rgpd}
-        onChange={e => setRgpd(e.target.value)}
-        required/>
-        Je consens à ce que ce site stocke les informations que je lui ai soumises afin qu’il puisse répondre à ma demande.
-      </LabelRgpd>
-      <InputBtn type="submit" value="ENVOYER" />
-    </Form>
+    <SectionForm>
+      <MyContainer>
+        <H1Form>Contact</H1Form>
+        <Form netlify action="/" name="contact" method="post" onSubmit={handleSubmit}>
+          <Label>
+            Votre Nom :
+            <Input
+              name="firstName"
+              type="text"
+              value={name}
+              onChange={e => setName(e.target.value)}
+              required
+            />
+          </Label>
+          <Label>
+            Votre e-mail:
+            <Input
+              name="email"
+              type="email"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              required
+            />
+          </Label>
+          <Label>
+            Votre e-mail:
+            <Textarea
+              name="message"
+              value={message}
+              onChange={e => setMessage(e.target.value)}
+              required
+              rows="8"
+            />
+          </Label>
+          RGPD :
+          <LabelRgpd>
+            <InputCheck
+            type="checkbox"
+            value={rgpd}
+            onChange={e => setRgpd(e.target.value)}
+            required/>
+            Je consens à ce que ce site stocke les informations que je lui ai soumises afin qu’il puisse répondre à ma demande.
+          </LabelRgpd>
+          <InputBtn type="submit" value="ENVOYER" />
+        </Form>
+      </MyContainer>
+    </SectionForm>
   );
 }
 
