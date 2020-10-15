@@ -10,7 +10,7 @@ const ThankYou = () =>(
             <H1Contact>Merci pour votre message !</H1Contact>
             <PContact>Nous vous recontacterons dans les plus brefs delais</PContact>
             <PContact style={{textDecoration:"underline"}}>Retour à la page d'acceuil</PContact>
-            <Mail style={{maxWidth:"500px", marginLeft:"auto",marginRight:"auto"}}/>
+            <Mail style={{maxHeight:"50%",maxWidth:"80%", marginLeft:"auto",marginRight:"auto"}}/>
         </ContainerContact>
         </Link>
     </SectionContact>

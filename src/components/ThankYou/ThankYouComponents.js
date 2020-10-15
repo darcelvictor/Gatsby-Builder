@@ -7,7 +7,7 @@ height:100vh;
 min-height:800px;
 display:flex;
 background-color : ${props => props.theme.second};
-align-items:flex-end;
+align-items:center;
 justify-content:center;
 margin-top:-80px;
 `
@@ -15,7 +15,7 @@ margin-top:-80px;
 export const ContainerContact = styled(MyContainer)`
 display:flex;
 flex-direction:column;
-justify-content:flex-end;
+justify-content:center;
 align-items:center;
 height:100vh;
 min-height:800px;
