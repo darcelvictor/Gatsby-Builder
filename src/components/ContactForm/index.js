@@ -27,9 +27,9 @@ const ContactForm = (props) => {
     const data = { 
       "form-name": "contact",
       "name": name,
-      "e-mail": email,
+      "email": email,
       "message":message,
-      "RGOD": rgpd,
+      "rgpd": rgpd,
     }
     // This POSTs your encoded form to Netlify with the required headers (for text; headers will be different for POSTing a file) and, on success, redirects to the custom success page using Gatsby's `navigate` helper function that we imported at the top
     fetch("/", {
