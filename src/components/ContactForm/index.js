@@ -28,7 +28,7 @@ const ContactForm = (props) => {
       "form-name": "contact",
       "name": name,
       "email": email,
-      "message":message,
+      "message": message,
       "rgpd": rgpd,
     }
     // This POSTs your encoded form to Netlify with the required headers (for text; headers will be different for POSTing a file) and, on success, redirects to the custom success page using Gatsby's `navigate` helper function that we imported at the top
@@ -82,6 +82,7 @@ const ContactForm = (props) => {
           <LabelRgpd>
             <InputCheck
             type="checkbox"
+            name="rgpd"
             value={rgpd}
             onChange={e => setRgpd(e.target.value)}
             required/>
