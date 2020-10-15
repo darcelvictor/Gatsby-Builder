@@ -18,7 +18,8 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 height:100vh;
-min-height:800px;
+min-height:400px;
+max-height:600px;
 `
 
 export const H1Contact = styled.h1`

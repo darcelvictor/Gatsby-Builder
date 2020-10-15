@@ -74,9 +74,9 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
+  lang: `fr`,
+  meta: [`Digital Project | l'Agence Digital`],
+  description: `Digital Project est une agence digital spécialisée dans la stratégie numérique, nous accompagnons nos clients dans l'élaboaration et la création de produits ou services digitaux`,
 }
 
 SEO.propTypes = {

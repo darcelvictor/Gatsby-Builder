@@ -10,7 +10,7 @@ const PresentationSection = ({firstSection}) => {
                 <MyContainer>
                     <TopLine>Qui sommes nous ?</TopLine>
                     <HeadLine>Des artisans du web</HeadLine>
-                    <Subtitle>Digital Project c'est des jeunes passionés, aux services de vos besoins digitaux.<br/>Nous travaillons avec des experts en marketing, en design et en programmation.<br/>Nous vous accompagnons dans la mise en place de statégie digital adaptée à vos besoins</Subtitle>
+                    <Subtitle>Digital Project c'est des jeunes passionés, aux services de vos besoins digitaux.<br/>Nous travaillons avec des experts en marketing, en design et en programmation.<br/>Nous vous accompagnons dans la mise en place de statégie digital adaptée à vos besoins.</Subtitle>
                 </MyContainer>
             </InfoSec>
         </>
