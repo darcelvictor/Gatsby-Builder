@@ -11,7 +11,8 @@ import PropTypes from "prop-types"
 import GlobalStyle from "./globalStyle"
 
 import Navbar from "./NavbarTransparency"
-import Footer from "./Footer"
+import FooterSection from "./Footer"
+
 
 
 
@@ -21,7 +22,7 @@ const Layout = ({ children }) => {
       <Navbar/>
       <GlobalStyle/>
         <main>{children}</main>
-      <Footer/>
+      <FooterSection/>
     </>
   )
 }

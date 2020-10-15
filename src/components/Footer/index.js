@@ -1,5 +1,5 @@
 import React from 'react'
-import {Footer, LinkFooter} from './FooterElements'
+import {Footer, LinkFooter, AFooter} from './FooterElements'
 
 
 const FooterSection = () => {
@@ -8,6 +8,10 @@ const FooterSection = () => {
            © {new Date().getFullYear()}, Built by
            {` `}
            <LinkFooter to="/">Digital Project</LinkFooter>
+           {` `}
+           With
+           {` `}
+           <AFooter href="https://www.gatsbyjs.com/">Gatsby</AFooter>
         </Footer>
     )
 }

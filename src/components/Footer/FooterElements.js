@@ -2,10 +2,9 @@ import styled from "styled-components"
 import {Link} from 'gatsby'
 
 export const Footer = styled.footer`
-height:80px;
-display:flex;
-align-items:center;
-justify-content:center;
+text-align:center;
+padding-top:30px;
+padding-bottom:30px;
 text-decoration:none;
 background : ${props => props.theme.primary};
 color:white;
@@ -13,7 +12,14 @@ color:white;
 
 export const LinkFooter=styled(Link)`
 text-decoration:none;
-margin-left:10px;
+color:white;
+&:hover{
+    color : #aaa;
+}
+`
+
+export const AFooter=styled.a`
+text-decoration:none;
 color:white;
 &:hover{
     color : #aaa;
