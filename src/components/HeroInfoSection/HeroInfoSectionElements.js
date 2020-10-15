@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const InfoSec = styled.section`
     padding: 160px 0;
-    background: #1c2237;
+    background:${props=>props.theme.second};
     margin-top: ${({firstSection}) => firstSection ? "-80px" : "0px"};
     @media screen and (max-width: ${props => props.theme.wrapperWidth}){
         padding: 40px 0;
@@ -19,7 +19,7 @@ export const InfoRow = styled.div`
 
 `
 export const InfoColumn=styled.div`
-     margin-bottom: 15px;
+    margin-bottom: 15px;
     padding-right: 15px;
     padding-left: 15px;
     flex:1;
@@ -42,7 +42,7 @@ export const TextWrapper = styled.div`
     }
 `
 
-export const TopLine = styled.h1` 
+export const TopLine = styled.h2` 
     margin-bottom:16px;
     font-size: 1.1rem;
     color:#a9b3c1;

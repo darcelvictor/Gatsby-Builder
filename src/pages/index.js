@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import HeroInfoSection from "../components/HeroInfoSection"
+import PresentationSection from "../components/PresentationSection"
 import {firstCTA} from "../DATA/HomePage"
 
 
@@ -12,6 +13,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HeroInfoSection {...firstCTA}/>
+    <PresentationSection/>
   </Layout>
 )
 
