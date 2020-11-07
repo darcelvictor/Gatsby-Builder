@@ -1,5 +1,5 @@
 const theme = {
-    maxWidth:"1100px",
+    maxWidth:"1300px",
     wrapperWidth:"900px",
    
     //color https://coolors.co/101522-1c2237-4b59f7-0467fb-a9b3c1-f7f8fa

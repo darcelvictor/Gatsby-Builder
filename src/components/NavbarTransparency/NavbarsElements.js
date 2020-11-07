@@ -81,6 +81,7 @@ export const NavItem = styled.li`
     height:80px;
     display:flex;
     align-items:center;
+    font-family:${props => props.theme.firstFont};
     @media screen and (max-width:${props => props.theme.maxWidth})
     {
         width:100%
