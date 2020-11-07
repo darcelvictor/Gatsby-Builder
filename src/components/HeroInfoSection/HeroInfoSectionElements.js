@@ -65,6 +65,7 @@ export const Subtitle= styled.p`
 
 export const ImgWrapper =styled.div`
 max-width:550px;
+width:90%;
 display:flex;
 justify-content: ${({imgStart})=> imgStart? 'flex-start':'flex-end'};
 @media screen and (max-width: ${props => props.theme.wrapperWidth}){

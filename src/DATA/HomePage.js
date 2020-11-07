@@ -4,7 +4,7 @@ export const firstCTA =
     imgStart:false,
     topLine: "Agence Digital",
     headLine:"Agence spécialisée dans le devellopement web",
-    description:`Digital Project crée des sites web sur mesures.`,
+    description:`Digital Project`,
     description1:`Nos créations sont adaptées à vos objectifs et votre budget.`,
     description2:`Nos sites sont optimisés, rapides et sécurisés.`,
     buttonLabel:"contactez-nous !",

@@ -82,6 +82,7 @@ const ContactForm = (props) => {
           <LabelRgpd>
             <InputCheck
             type="checkbox"
+            name="rgpd"
             value={rgpd}
             onChange={e => setRgpd(e.target.value)}
             required/>
