@@ -12,11 +12,11 @@ export const Nav = styled.nav`
     align-items:center;
     top:0;
     z-index:999;
-    transition: 0.8 all ease;
+    transition: 0.2 all ease;
     @media screen and (max-width: ${props => props.theme.maxWidth})
     {
         background: ${({click}) => click ? "#101522": "#101522"};
-        transition: 0.8 all ease;
+        transition: 0.2 all ease;
     } 
 `
 
