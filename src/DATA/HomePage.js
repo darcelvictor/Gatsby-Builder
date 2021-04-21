@@ -7,7 +7,7 @@ export const firstCTA =
     description:`Digital Project`,
     description1:`Nos créations sont adaptées à vos objectifs et votre budget.`,
     description2:`Nos sites sont optimisés, rapides et sécurisés.`,
-    buttonLabel:"contactez-nous !",
+    buttonLabel:"CONTACTEZ NOUS !",
     buttonLink:"/contact",
     img:require('../images/svg/web_developer.svg'),
     alt:'web developer',
