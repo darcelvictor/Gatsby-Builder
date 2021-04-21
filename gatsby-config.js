@@ -13,21 +13,21 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Roboto`,
-            variants: [`500`],
-          },
-          {
-            family: `Montserrat`,
-            variants: [`400`],
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Roboto`,
+    //         variants: [`500`],
+    //       },
+    //       {
+    //         family: `Montserrat`,
+    //         variants: [`400`],
+    //       },
+    //     ],
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

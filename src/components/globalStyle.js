@@ -1,11 +1,13 @@
-import {createGlobalStyle} from "styled-components"
+import { createGlobalStyle } from "styled-components"
+import "@fontsource/roboto/latin-500.css"
+import "@fontsource/montserrat/latin-400.css"
 
 const GlobalStyle = createGlobalStyle`
 *{
     box-sizing:border-box;
     margin: 0;
     padding: 0;
-    //font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a:visited, a:hover, a:active,a:link {
@@ -38,4 +40,4 @@ p {
     font-weight:400;
 }`
 
-export default GlobalStyle;
+export default GlobalStyle
